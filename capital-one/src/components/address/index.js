@@ -6,7 +6,7 @@ import {
 class AddressInput extends Component {
   constructor(props) {
     super(props)
-    this.state = { address: '123 California St., San Francisco, CA' }
+    this.state = { address: '123 State St., Chicago, IL' }
     this.onChange = (e) => this.setState({ address: [e.target.value] });
   }
 

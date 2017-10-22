@@ -123,7 +123,7 @@
   border-color: #009688;
   border-top-style: none;
   border-right-style: none;
-  background: green;
+  background: aqua;
 }
 .checkbox:after {
   content: "";
