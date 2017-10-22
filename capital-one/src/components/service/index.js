@@ -91,7 +91,7 @@ class Service extends Component {
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option6" defaultChecked={this.state.option6} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">	Plattsburgh Town Office</span>
+                                            <span className="label-text">Plattsburgh Town Office</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
@@ -103,7 +103,7 @@ class Service extends Component {
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option8" defaultChecked={this.state.option8} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">	Casella</span>
+                                            <span className="label-text">Casella</span>
                                         </label>
                                     </li>
                                 </ul>
