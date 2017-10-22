@@ -1,0 +1,87 @@
+* {
+    font-family: "Montserrat","Helvetica Neue",sans serif;
+}
+
+.sf-bg-img {
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: background-image 1s ease-in-out;
+    background-image: url("/img/sf_bg.jpg");
+}
+.bg-layer {
+    top: 0;
+    background-image: url("/img/grey_layer.png");
+    background-size: contain;
+    background-position: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+}
+
+.main-content {
+    position: relative;
+    margin: 150px auto 0 auto;
+    width: 50%;
+    height: 450px;
+    color: #fff;
+}
+
+.main-content .questions {
+    margin: 50px;
+}
+.main-content .questions .find-apartment-or-where {
+    padding-top: 10px;
+}
+.main-content .questions p {
+    font-size: 28px;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 30px;
+}
+
+.response input {
+    border: 1px solid transparent;
+    display: block;
+    color: #58C3D1;
+    width: 100%;
+    resize: none;
+    background: none;
+    outline: none;
+    font-family: "Raleway","Helvetica Neue",sans serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 40px;
+    border-bottom: 1px solid #58C3D1;
+}
+
+.response .two-option-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.response .two-option-images .option-image{
+    padding: 10px 20px;
+    border: 1px solid #58C3D1;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(88, 195, 209, 0.5);
+}
+
+.main-content .questions .option-image-label{
+    margin-top: 20px;
+}
+
+.main-content .questions .option-image-label p {
+    font-size: 18px;
+}
