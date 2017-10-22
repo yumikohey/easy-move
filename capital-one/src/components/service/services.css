@@ -195,3 +195,35 @@
     transform: translateY(0);
   }
 }
+
+.sign-up-btn {
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #58C3D1;
+    border-radius: 5px;
+    background-color: rgba(88, 195, 209, 0.8) !important;
+    color: #fff;
+}
+
+.update-address {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.update-address .free-item {
+    width: 20%;
+    height: 250px;
+    background-color: rgba(88, 195, 209, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.free-item .item-icon {
+    padding: 20px 0;
+}

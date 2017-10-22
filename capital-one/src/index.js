@@ -9,6 +9,7 @@ import Questionnaire from "./components/questionnaire/index";
 import MoveInDate from "./components/moveInDate/index";
 import AddressInput from "./components/address/index";
 import Service from "./components/service/index";
+import UpdateAddress from "./components/updates/index";
 import "./index.css";
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Route path="/move-in-date" component={MoveInDate} />
             <Route path="/place" component={AddressInput} />
             <Route path="/services" component={Service} />
+            <Route path="/all-service" component={UpdateAddress} />
         </div>
     </BrowserRouter>, document.getElementById('root')
 );

@@ -110,6 +110,16 @@ class Service extends Component {
                             </div>
                         </div>
                     </div>
+
+                    <div className="options-footer">
+                        <div className="pull-right">
+                            <Link to="/all-service">
+                                <button className="sign-up-btn">
+                                    Do it for me
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
