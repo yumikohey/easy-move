@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
+import classNames from "classnames";
 import "./questionnaire.css";
 
 class Questionnaire extends Component {
+    constructor() {
+        super();
+        this.state = {
+            hasNewAddress: null
+        };
+    }
+
+    selectImage(hasNewAddress) {
+        if (hasNewAddress) {
+            this.setState({hasNewAddress: true});
+            console.log("yes");
+        } else {
+            this.setState({hasNewAddress: false});
+            console.log("no");
+        }
+    }
+
     render() {
+        const yesIsSelected = this.state.hasNewAddress ? "option-image option-selected" : "option-image";
+        const noIsSelected = this.state.hasNewAddress ? "option-image" : "option-image option-selected";
         return (
             <div className="container-fluid">
                 <div className="sf-bg-img"> <div className="bg-layer"></div></div>
@@ -13,14 +33,14 @@ class Questionnaire extends Component {
 
                             <div className="response">
                                 <div className="two-option-images">
-                                    <div className="option-image">
+                                    <div className={yesIsSelected} onClick={(e) => this.selectImage(true)}>
                                         <img src="./img/apartment.png" alt="" width="100px"/>
 
                                         <div className="option-image-label">
                                             <p>Yes, I have new address ready.</p>
                                         </div>
                                     </div>
-                                    <div className="option-image">
+                                    <div className={noIsSelected} onClick={(e) => this.selectImage(false)}>
                                         <img src="./img/apartment.png" alt="" width="100px"/>
 
                                         <div className="option-image-label">
@@ -28,13 +48,6 @@ class Questionnaire extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="question-text">
-                            <p>What is your new address?</p>
-
-                            <div className="response">
-                                <input type="text" value=""/>
                             </div>
                         </div>
                     </div>

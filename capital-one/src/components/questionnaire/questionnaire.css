@@ -76,6 +76,12 @@
     height: 200px;
     text-align: center;
     background-color: rgba(88, 195, 209, 0.5);
+    cursor: pointer;
+}
+
+.option-image.option-selected {
+    border: 5px solid #58C3D1 !important;
+    background-color: rgba(88, 195, 209, 0.8) !important;
 }
 
 .main-content .questions .option-image-label{
