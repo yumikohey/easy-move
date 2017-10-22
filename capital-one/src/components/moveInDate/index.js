@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import "./move-in-date.css";
+import {
+  Link
+} from 'react-router-dom';
 
 class MoveInDate extends Component {
     constructor() {
@@ -46,9 +49,11 @@ class MoveInDate extends Component {
                     </div>
                     <div className="options-footer">
                         <div className="pull-right">
-                            <button className="next-btn">
-                                Next
-                            </button>
+                            <Link to="/place">
+                                <button className="next-btn">
+                                    Next
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
