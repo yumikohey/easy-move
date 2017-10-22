@@ -18,6 +18,7 @@ class Home extends Component {
                     <div className="login-box">
                         <div className="left">
                             <div className="description">
+                                <h1 className="google-font">EASY MOVE</h1>
                                 <h3>
                                     Using <b> Capital One </b> sign in,<br/>
                                     moving has never been easier.
