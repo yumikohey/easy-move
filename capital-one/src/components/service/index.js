@@ -30,10 +30,32 @@ class Service extends Component {
                                 </div>
                             </div>
                             <div className="check-box-section">
-                                <label className="check">
-                                    <input type="checkbox"/>
-                                    <div className="box"></div>
-                                </label>
+                                <ul className="list">
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox"/>
+                                            <span className="label-text">ComEd</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Water Service</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Comcast</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Street Parking Stickers</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="service-box cancel">
@@ -44,6 +66,34 @@ class Service extends Component {
                                 <div>
                                     15 Kimberly Ln. Morrissonville, NY 12962
                                 </div>
+                            </div>
+                            <div className="check-box-section">
+                                <ul className="list">
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">ComEd</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Water Service</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Comcast</span>
+                                        </label>
+                                    </li>
+                                    <li className="list__item">
+                                        <label className="label--checkbox">
+                                        <input type="checkbox" className="checkbox" checked />
+                                            <span className="label-text">Street Parking Stickers</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
