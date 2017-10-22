@@ -7,8 +7,21 @@ import "./services.css";
 class Service extends Component {
   constructor(props) {
     super(props)
-    this.state = { address: '123 California St., San Francisco, CA' }
-    this.onChange = (e) => this.setState({ address: [e.target.value] });
+    this.state = {
+        option1: true,
+        option2: true,
+        option3: true,
+        option4: true,
+        option5: true,
+        option6: true,
+        option7: true,
+        option8: true,
+    }
+    this.handleChangeChk = (e) => {
+        const name = e.target.getAttribute("data-name");
+        const value = e.target.value;
+        this.setState({name: !value});
+    }
   }
 
     render() {
@@ -33,25 +46,25 @@ class Service extends Component {
                                 <ul className="list">
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox"/>
+                                        <input type="checkbox" className="checkbox" data-name="option1" defaultChecked={this.state.option1} onChange={this.handleChangeChk} />
                                             <span className="label-text">ComEd</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option2" defaultChecked={this.state.option2} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Water Service</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option3" defaultChecked={this.state.option3} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Comcast</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option4" defaultChecked={this.state.option4} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Street Parking Stickers</span>
                                         </label>
                                     </li>
@@ -71,25 +84,25 @@ class Service extends Component {
                                 <ul className="list">
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option5" defaultChecked={this.state.option5} onChange={this.handleChangeChk}/>
                                             <span className="label-text">ComEd</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option6" defaultChecked={this.state.option6} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Water Service</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option7" defaultChecked={this.state.option7} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Comcast</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
-                                        <input type="checkbox" className="checkbox" checked />
+                                        <input type="checkbox" className="checkbox" data-name="option8" defaultChecked={this.state.option8} onChange={this.handleChangeChk}/>
                                             <span className="label-text">Street Parking Stickers</span>
                                         </label>
                                     </li>
