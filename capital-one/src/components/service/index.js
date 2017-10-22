@@ -85,25 +85,25 @@ class Service extends Component {
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option5" defaultChecked={this.state.option5} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">ComEd</span>
+                                            <span className="label-text">NYSEG</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option6" defaultChecked={this.state.option6} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">Water Service</span>
+                                            <span className="label-text">	Plattsburgh Town Office</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option7" defaultChecked={this.state.option7} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">Comcast</span>
+                                            <span className="label-text">Charter Spectrum</span>
                                         </label>
                                     </li>
                                     <li className="list__item">
                                         <label className="label--checkbox">
                                         <input type="checkbox" className="checkbox" data-name="option8" defaultChecked={this.state.option8} onChange={this.handleChangeChk}/>
-                                            <span className="label-text">Street Parking Stickers</span>
+                                            <span className="label-text">	Casella</span>
                                         </label>
                                     </li>
                                 </ul>
