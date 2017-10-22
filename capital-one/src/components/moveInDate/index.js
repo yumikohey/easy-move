@@ -9,6 +9,15 @@ class MoveInDate extends Component {
             date: '',
             year: ''
         };
+
+        this.onChange = this.onChange.bind(this);
+    }
+
+    onChange (e) {
+        const name = e.target.getAttribute("data-name");
+        const value = e.target.value;
+        this.setState({[name]: value});
+        console.log(this.state);
     }
 
     render() {
@@ -23,13 +32,13 @@ class MoveInDate extends Component {
                             <div className="response">
                                 <div className="move-in-date">
                                     <div className="month-input" >
-                                        <input type="text"/>    <span className="slash">/</span>
+                                        <input type="text" onChange={this.onChange} data-name="month" value={this.state.month}/>    <span className="slash">/</span>
                                     </div>
                                     <div className="date-input">
-                                        <input type="text"/>    <span className="slash">/</span>
+                                        <input type="text" onChange={this.onChange} data-name="date" value={this.state.date}/>    <span className="slash">/</span>
                                     </div>
                                     <div className="year-input">
-                                        <input type="text"/>
+                                        <input type="text" onChange={this.onChange} data-name="year" value={this.state.year}/>
                                     </div>
                                 </div>
                             </div>
