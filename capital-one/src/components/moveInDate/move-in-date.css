@@ -1,0 +1,30 @@
+.move-in-date {
+    display: flex;
+    justify-content: center;
+}
+
+.move-in-date div, .move-in-date div input {
+    display: inline;
+}
+
+.move-in-date div input {
+    padding: 0 3px;
+}
+
+.month-input, .date-input {
+    width: 40px;
+    margin: 5px;
+}
+
+.year-input {
+    width: 80px;
+    margin: 5px;
+}
+
+.slash {
+    margin: 0 5px;
+    position: relative;
+    top: -20px;
+    left: 40px;
+    font-size: 18px;
+}

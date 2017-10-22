@@ -28,7 +28,7 @@
     position: relative;
     margin: 150px auto 0 auto;
     width: 50%;
-    height: 450px;
+    height: 550px;
     color: #fff;
 }
 
@@ -90,4 +90,18 @@
 
 .main-content .questions .option-image-label p {
     font-size: 18px;
+}
+
+.options-footer {
+    margin-top: 100px;
+}
+.options-footer .next-btn {
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #58C3D1;
+    border-radius: 5px;
+    background-color: rgba(88, 195, 209, 0.8) !important;
+    color: #fff;
 }

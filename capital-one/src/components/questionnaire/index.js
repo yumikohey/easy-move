@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import classNames from "classnames";
 import "./questionnaire.css";
+import {
+  Link
+} from 'react-router-dom';
 
 class Questionnaire extends Component {
     constructor() {
@@ -22,7 +25,7 @@ class Questionnaire extends Component {
 
     render() {
         const yesIsSelected = this.state.hasNewAddress ? "option-image option-selected" : "option-image";
-        const noIsSelected = this.state.hasNewAddress ? "option-image" : "option-image option-selected";
+        const noIsSelected = (this.state.hasNewAddress === null || this.state.hasNewAddress === true) ? "option-image" : "option-image option-selected";
         return (
             <div className="container-fluid">
                 <div className="sf-bg-img"> <div className="bg-layer"></div></div>
@@ -49,6 +52,15 @@ class Questionnaire extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="options-footer">
+                        <div className="pull-right">
+                            <Link to="/move-in-date">
+                                <button className="next-btn">
+                                    Next
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
